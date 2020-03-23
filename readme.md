@@ -16,7 +16,7 @@ Déterminer des hypercubes dans lesquels la proportion locale de 0 et de 1 est s
 
 1. On considère le plus petit hypercube contenant l'ensemble des *m* points.
 2. On redimensionne ce dernier hypercube à un hypercube normalisé *[0,1]ⁿ*.
-3. On classifie les points dans des cases pour une résolution donnée. Ceci donne lieu à une fonction de densité locale, qu'on ajuste selon la proportion globale.
+3. On classifie les points dans des cases pour une résolution donnée. Ceci donne lieu à une fonction de proportion locale, qu'on ajuste selon la proportion globale.
 4. On applique un noyau gaussien pour lisser cette dernière fonction.
 5. On fait une montée de gradient d'un rectangle dans cette fonction lissée.
 6. On regarde où le rectangle a convergé.
