@@ -257,6 +257,7 @@ def mean_or_sum_function(x,mean_or_sum):
 i = 0
 stop_simulation = 0
 number_of_simulations = 1
+simulation_termine = 0
 
 max_value_found     = -np.inf
 old_max_value_found = -np.inf
@@ -279,9 +280,11 @@ phase = 0
 def gen():
     global stop_simulation
     global number_of_simulations
+    global simulation_termine
     i = 0
-    if stop_simulation==number_of_simulations:
+    if stop_simulation==number_of_simulations and simulation_termine==0:
         print("Simulation terminée")
+        simulation_termine=1
     while stop_simulation<number_of_simulations:
         i += 1
         yield i
